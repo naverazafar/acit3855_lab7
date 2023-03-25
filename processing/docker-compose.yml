@@ -1,0 +1,13 @@
+version: '2'
+services:  
+  processing:
+    build: .
+    ports:
+      - "8100:8100"
+    networks: 
+      - network1
+
+networks:
+  network1:
+    name: lab_6_default
+    external: true
