@@ -1,6 +1,6 @@
 version: '2'
 services: 
-  receiver:
+  storage:
     build: .
     ports:
       - "8090:8090"
@@ -9,5 +9,5 @@ services:
 
 networks:
   network1:
-    name: lab_6_default
+    name: acit3855_lab7_default
     external: true
