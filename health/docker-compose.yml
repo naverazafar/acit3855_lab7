@@ -1,9 +1,9 @@
 version: '2'
 services: 
-  receiver:
+  health:
     build: .
     ports:
-      - "8080:8080"
+      - "8110:8110"
     networks: 
       - network1
 

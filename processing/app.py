@@ -103,6 +103,9 @@ def populate_stats():
 
     return NoContent, 201
 
+def health():
+	return 200
+
 def init_scheduler():
     sched = BackgroundScheduler(daemon=True)
     sched.add_job(populate_stats, 'interval', seconds=app_config['period'])
